@@ -6,27 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <div id="main-screen">
-        <img src="image/quizhome.svg" id="bg-image">
-        <img src="./image/logo.svg" id="logo">
-        <img src="./image/effect.svg" id="effect">
+        <img src="image/bg.svg" id="bg-image">
         <button id="start-button">Start</button>
     </div>
 
     <div id="quiz-screen">
-        <span id="question-count"></span>
-        <img src="image/quizhome.svg" id="bg-image">
-        <h2 id="question"></h2>
-        <ul id="answers" class="answers"></ul>
-        <button id="submit-button">Next</button>
+        <img src="image/bg-img.svg" id="bg-image">
+        <div class="logo">
+            <img src="./image/logo.svg" alt="">
+        </div>
+        <div class="quiz-bd">
+            <span id="question-count"></span>
+            <h2 id="question"></h2>
+            <ul id="answers" class="answers"></ul>
+            <button id="submit-button">Next</button>
+        </div>
     </div>
 
     <div id="result-screen">
-        <img src="image/quizhome.svg" id="bg-image">
+        <img src="image/bg-img.svg" id="bg-image">
         <div class="result">
             <p id="result"></p>
             <p id="time"></p>
@@ -39,7 +42,8 @@
             <button id="play-again-button">Play Again</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./js/he.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

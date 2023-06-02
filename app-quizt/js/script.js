@@ -1,5 +1,5 @@
-// lấy id
 
+// lấy id
 function $(id) {
   return document.getElementById(id);
 }
@@ -50,8 +50,8 @@ function quizScreen() {
 // Sử dụng DOM manipulation để tạo các phần tử HTML cho mỗi tùy chọn câu trả lời
   function loadQuestion(index) {
     let question = questions[index];
-    questionElement.textContent = question.question;
-
+    let decodedQuestion = he.decode(question.question);
+    questionElement.textContent = decodedQuestion;
     answersElement.innerHTML = "";
     let questionCountElement = $("question-count");
     questionCountElement.textContent = "Question " + (index + 1) + " of " + questions.length;
